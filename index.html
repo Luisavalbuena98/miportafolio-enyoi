@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Portafolio Luisa Valbuena
+    </title>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Portafolio</h1>
+        <h2>Luisa Fernanda Valbuena Álvarez</h2>
+        <p>Ingeniera Biomédica</p>
+        <img src="Imagen proyecto.jpeg" alt="Mi Imagen"  width="150"
+        height="130">
+
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#formacion">Formación Academica</a></li>
+                <li><a href="#experiencia">Experiencia Laboral</a></li>
+                <li><a href="#Otros">Otros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        
+        <p>Experiencia laboral en el sector de ciencias naturales, aplicadas 
+            y relacionadas,con habilidades para el mantenimiento preventivo 
+            y correctivo de equiposmédicos, documentación clínica, realización 
+            de inventarios, conocimiento enprograma de tecnovigilancia, experiencia 
+            en contacto con proveedores.Competencias sobresalientes tales como: seguimiento de normas, 
+            empatía,orientación al servicio, perseverancia, compromiso y trabajo en equipo. 
+            Manejo deherramientas tales como Office, Pseint, python, matlab, JavaScript, entre otras.</p>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación Academica</h2>
+        <div class=" card-container"> 
+            <div class="card">
+                <h2 class="card titulo"> Formación uno </h2>
+                <p class="card-description"> Bachillerato</p>
+                <button onclick="abrirModal('Bachillerato profundización en ingenieria','Instituto universitario de Caldas, 2015',
+                   'imageUniversitario.png' 
+                )" class="card-btn"> Ver Mas</button>
+            </div>
+            <div class="card">
+                <h2 class="card titulo"> Formación dos </h2>
+                <p class="card-description"> Universitaria</p>
+                <button onclick="abrirModal('Ingeniera Biomédica','Universidad Autonoma de Manziales, 2021',
+                   'imagesAutonoma.png' )" class="card-btn"> Ver Mas</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span onclick="cerrarModal()" class="close-btn">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-descripcion"></p>
+                <img id="modal-image" src="" alt="imagen modal">
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <div class="experiencia">
+            <h3>Practica Hospitalaria Profesional, Chinchiná, Manizales, Agosto 2020 - junio 2021. E.S.EHospital San Marcos de Chinchiná - Santé ingeniera</h3>
+            <ul>
+                <li>Ejecución de mantenimientos preventivos y mantenimientos correctivos.</li>
+                <li>Realización de labores de gestión documental.</li>
+                <li>Diseño e implementación de hojas de vida de los equipos médicos.</li>
+                <li>Actualización de documentación.</li>
+                <li>Verificación de plan de mantenimiento.</li>
+            </ul>
+        </div>
+        <div class="experiencia">
+            <h3>BioArm SAS, Manizales, Enero 2022 - Agosto 2022</h3>
+            <ul>
+                <li>Ejecución de mantenimientos preventivos y mantenimientos correctivos.</li>
+                <li>Realización de labores de gestión documental.</li>
+                <li>Diseño e implementación de hojas de vida de los equipos médicos.</li>
+                <li>Actualización de documentación.</li>
+                <li>Capacitación y educación al personal asistencial sobre tecnología biomédica</li>
+            </ul>
+        </div>
+        <div class="experiencia">
+            <h3>Ingenieria MC SAS- Hospital Federico Lleras acosta, Ibague, Octubre 2022- Marzo 2023</h3>
+            <ul>
+                <li>Ejecución de mantenimientos preventivos y mantenimientos correctivos.</li>
+                <li>Realización de labores de gestión documental.</li>
+                <li>Cumplimiento al cronograma de mantenimiento a equipos biomédicos</li>
+                <li>Disponibilidad establecidas por el hospital</li>
+                <li>Elaboración y revisión de documentación clínica</li>
+            </ul>
+        </div>
+        <div class="experiencia">
+            <h3>E.S.E Hospital Departamental Universitario de Quindio San Juan de Dios, Abril 2023</h3>
+            <ul>
+                <li>Ejecución de mantenimientos preventivos y mantenimientos correctivos.</li>
+                <li>Realización de labores de gestión documental.</li>
+                <li>Diseño e implementación de hojas de vida de los equipos medicos</li>
+                <li>Elaboración de informes mensuales de los trabajos realizados</li>
+                <li>Elaboración y revisión de documentación clínica</li>
+                <li>Disponibilidad establecidas por el hospital</li>
+                <li>Alistamiento de quirofano por el hospital </li>
+                <li>Capacitación y educación al personal asistencial sobre tecnolgía biomédica</li>
+                <li>Apoyo en las labores relacionadas con el programa de tecnovigilancia de la institución</li>
+            </ul>
+        </div>
+    </section>
+    </section>
+
+    <section id="Otros">
+        <h2> Otros </h2>
+
+    
+    </section>
+
+    <section id="contacto">
+        <h2> Contacto </h2>
+        <p>Puedes contactarme por medio de: </p>
+        <ul>
+            <li> Email: luisavalbuenaalvarez98@gmail.com </li>
+            <li> LinKedIn:</li>
+        </ul>
+
+
+
+    <footer> &copy; 2024, Luisa Valbuena Alvarez, Todos los derechos reservados</footer>
+</body>
+</html>

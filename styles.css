@@ -1,0 +1,157 @@
+body, h1, h2, h3, p, ul {
+    margin: o;
+    padding: 0;
+
+}
+
+body{
+    font-family: "Noto Sans Display", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header{
+    background-image: linear-gradient(to bottom right, #400f8f, #633f9c, #756a86, #86828b);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    background-color: #d3d1d6;
+    border: 1px solid #86828b;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 3px 3px #86828b;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-btn{
+    padding: 10px 15px;
+    background-color: #86828b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover{
+    background-color: #756a86;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#d9d6db ;
+}
+.modal-content{
+    background-color: #86828b;
+    margin: 10% auto;
+    padding: 15 px;
+    width: 80%;
+    border-radius: 6 px;
+    text-align: center;
+}
+
+.close-btn{
+    float: right;
+    font-size: 1.5 rem;
+    cursor: pointer;
+
+}
+
+.modal-image{
+    width: 25%;
+
+}
+h1 {
+    font-family: "Dancing Script", cursive; 
+}
+
+header p{
+    font-family: "Amatic SC", sans-serif;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 20 px 0;
+    list-style: none;
+    font-family: "Amatic SC", sans-serif;
+}
+
+nav ul li{
+    margin: 0 15px;
+
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+nav ul a:hover {
+    background-color:#756a86;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    background: #e1dde4;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #86828b;
+    list-style: georgian;
+}
+section h2 {
+    font-family: "Amatic SC", sans-serif;
+    width: 40%;
+}
+
+.formacion{
+    margin-top: 10px;
+}
+.experiencia {
+    margin-top: 20px;
+}
+.experiencia li {
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    padding: 20 px;
+    background-image: linear-gradient(to bottom right, #400f8f, #633f9c, #756a86, #86828b);
+    color: #fff;
+}
+
+@media (max-width:600px){
+    nav ul{
+        flex-direction: column;
+    }
+    section{
+        margin: 10px;
+    }
+    .card{
+        width: 90%;
+    }
+}
